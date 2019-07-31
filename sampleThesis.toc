@@ -1,0 +1,86 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Quantization}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Compact layers (Pruning)}{4}{section.1.2}
+\contentsline {section}{\numberline {1.3}Contributions}{5}{section.1.3}
+\contentsline {chapter}{\numberline {2}Related Work}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Network Pruning}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Pixel and Vector Pruning}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Channel and Filter Pruning}{8}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Quantization}{8}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Higher bit quantization}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}1-bit quantization}{9}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Other network compression approaches}{9}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Low-rank Approximations}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Sketch Recognition}{10}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Efficient Architecture Design}{10}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Novelty}{10}{section.2.4}
+\contentsline {chapter}{\numberline {3}Distribution Aware Binarization of Networks}{12}{chapter.3}
+\contentsline {section}{\numberline {3.1}Representational Power of Binary Networks}{12}{section.3.1}
+\contentsline {section}{\numberline {3.2}Distribution-Aware Binarization}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Derivation}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Intuitions about DAB-Net}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Implementation}{15}{subsection.3.2.3}
+\contentsline {subsubsection}{Parallel Prefix-Sums to Obtain $K$}{16}{section*.10}
+\contentsline {subsubsection}{Forward and Backward Pass}{17}{section*.11}
+\contentsline {subsection}{\numberline {3.2.4}Training Procedure}{17}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Experiments}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Experimental Setup}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Results}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}XNOR-Net vs DAB-Net}{20}{subsection.3.3.3}
+\contentsline {subsubsection}{Variation of $\alpha $ and $\beta $ across Time}{21}{section*.16}
+\contentsline {subsubsection}{Variation of $K$ across Time and Layers}{21}{section*.17}
+\contentsline {section}{\numberline {3.4}Summary}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Hybrid Binary Networks}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hybrid Binarization}{25}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Error Metric: Optimizing Speed \& Accuracy}{25}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Partitioning Algorithm}{26}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Impact on Speed and Energy Use}{28}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Experiments and Results}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Datasets and Models}{29}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Results}{30}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Algorithmic Insights}{31}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Why are layer-wise errors independent?}{32}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Variation with the Hybridization Ratio ($R$)}{33}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Optimizing Memory}{34}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Compressing Compact Models}{35}{subsection.4.2.7}
+\contentsline {section}{\numberline {4.3}Summary}{35}{section.4.3}
+\contentsline {chapter}{\numberline {5}Deep Expander Networks}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Approach}{37}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Graphs and Deep CNNs}{38}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Sparse Random Graphs}{38}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Measures of Connectivity}{39}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Sensitivity of X-Nets}{40}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Efficient Algorithms}{41}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Using Sparse Representation}{41}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}X-Net based Fast Dense Convolution}{41}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Experiments and Results}{42}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Comparison with Grouped Convolution}{42}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Comparison with Efficient CNN Architectures}{43}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Comparison with Pruning Techniques}{45}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Stability of Models}{45}{subsection.5.3.4}
+\contentsline {subsection}{\numberline {5.3.5}Training Wider and Deeper networks}{47}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Summary}{48}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusions}{49}{chapter.6}
+\contentsline {chapter}{\numberline {}{\it Appendix}\ {\it A}:\ Binary Networks: Appendix}{52}{appendix.A}
+\contentsline {section}{\numberline {A.1}Optimal representation of $\setbox \z@ \hbox {\frozen@everymath \@emptytoks \mathsurround \z@ $\textstyle \mathbf {W}$}\mathaccent "0365{\mathbf {W}}$}{52}{section.A.1}
+\contentsline {section}{\numberline {A.2}Gradient derivation}{53}{section.A.2}
+\contentsline {section}{\numberline {A.3}Binary Networks as Approximators}{55}{section.A.3}
+\contentsline {section}{\numberline {A.4}Expressibility of Binary Networks}{55}{section.A.4}
+\contentsline {section}{\numberline {A.5}Experimental details}{56}{section.A.5}
+\contentsline {section}{\numberline {A.6}Experimental details}{56}{section.A.6}
+\contentsline {subsection}{\numberline {A.6.1}Data processing}{56}{subsection.A.6.1}
+\contentsline {subsection}{\numberline {A.6.2}Hyper-parameters}{57}{subsection.A.6.2}
+\contentsline {section}{\numberline {A.7}FLOPs, Exploiting Filter Repetition and Computational Cost Calculation}{57}{section.A.7}
+\contentsline {section}{\numberline {A.8}Models used}{58}{section.A.8}
+\contentsline {section}{\numberline {A.9}Model Architectures}{58}{section.A.9}
+\contentsline {section}{\numberline {A.10}Binarization-errors across layers }{58}{section.A.10}
+\contentsline {chapter}{\numberline {}{\it Appendix}\ {\it B}:\ Deep Expander Networks: Appendix}{67}{appendix.B}
+\contentsline {section}{\numberline {B.1}Explicit Expanders}{67}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Cayley Expander}{67}{subsection.B.1.1}
+\contentsline {section}{\numberline {B.2}Sensitivity in Expanders}{68}{section.B.2}
+\contentsline {section}{\numberline {B.3}Model Details}{69}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}Filter structure of AlexNet and VGG}{69}{subsection.B.3.1}
+\contentsline {subsection}{\numberline {B.3.2}Results}{70}{subsection.B.3.2}
+\contentsline {subsection}{\numberline {B.3.3}Experimental Details}{72}{subsection.B.3.3}
+{\@tempskipb 3.0ex plus 1pt\relax }
+\contentsline {chapter}{{Bibliography}}{75}{appendix*.52}

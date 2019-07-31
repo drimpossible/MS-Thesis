@@ -1,2 +1,2 @@
-# MS-Thesis
-My MS Thesis Source Code
+# Thesis
+My thesis updated

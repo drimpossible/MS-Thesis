@@ -1,0 +1,32 @@
+\addvspace {1em}
+\contentsline {table}{\numberline {1.1}{\ignorespaces Comparison of Binarization and other methods in terms of compression.\relax }}{2}{table.caption.7}
+\contentsline {table}{\numberline {1.2}{\ignorespaces As shown by Horowitz \emph {et al}\onedot \cite {horowitz2014power}, power consumption for various operations at 45nm 0.9V. Observe that 8-bit integers require significantly less energy than their equivalent 32-bit floating point operations.\relax }}{3}{table.caption.8}
+\addvspace {1em}
+\addvspace {1em}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Our DAB-Net models compared to FBin, WBin and FPrec models on TU-Berlin and Sketchy in terms of accuracy.\relax }}{20}{table.caption.12}
+\contentsline {table}{\numberline {3.2}{\ignorespaces A comparison between state-of-the-art single model accuracies of recognition systems on the TU-Berlin dataset.\relax }}{21}{table.caption.13}
+\addvspace {1em}
+\contentsline {table}{\numberline {4.1}{\ignorespaces A detailed comparison of accuracy, memory use, FLOPs with popular benchmark compression techniques on ImageNet. Our hybrid models outperform other 1-bit activation models and perform on par with 2-bit models while having a significantly higher speedup. Hybrid-2 models have the last layer binarized.\relax }}{30}{table.caption.21}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Our hybrid models compared to FBin, WBin and NoBin models on Imagenet in terms of accuracy, memory and computations expense.\relax }}{31}{table.caption.22}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Our hybrid models compared to FBin, WBin and full prec models on TU-Berlin and Sketchy datasets in terms of accuracy, memory and speed tradeoff.\relax }}{32}{table.caption.23}
+\contentsline {table}{\numberline {4.4}{\ignorespaces A comparison between state-of-the-art single model accuracies of recognition systems on the TU-Berlin dataset.\relax }}{32}{table.caption.25}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Effects of last layer weight-binarization on TU-Berlin dataset, for Sketch-A-Net and ResNet-1. Observe that our hybrid models do not face drastic accuracy drop when the last layer is weight-binarized.\relax }}{34}{table.caption.26}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Our performance on SqueezeNet, an explicitly compressed model architecture. Although SqueezeNet is an inherently compressed model, our method still achieves further compression on it.\relax }}{35}{table.caption.27}
+\addvspace {1em}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Results obtained by ResNet and DenseNet-BC models on ImageNet dataset, ordered by \#FLOPs. or each datapoint, we use the X-C-D-G notation (see Section \ref {sec:denres}) along with the accuracy.\relax }}{44}{table.caption.33}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Comparison with other methods on CIFAR-10 dataset using VGG16 as the base model. We significantly outperform popular compression techniques, achieving similar accuracies with upto 13x compression rate.\relax }}{46}{table.caption.34}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison with other methods on ImageNet-2012 using AlexNet as the base model. We are able to achieve comparable accuracies using only 9.7M parameters.\relax }}{46}{table.caption.35}
+\contentsline {table}{\numberline {5.4}{\ignorespaces The accuracies (mean $\pm $ stddev) of various models over 10 training runs on CIFAR-10 dataset.\relax }}{47}{table.caption.36}
+\contentsline {table}{\numberline {5.5}{\ignorespaces The mean accuracy and range of variation over 2 runs of MobileNet0.5 variants on ImageNet dataset.\relax }}{47}{table.caption.36}
+\addvspace {1em}
+\addvspace {1em}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Layers of the AlexNet model, with the number of parameters and FLOPs for versions (WBin, Fbin, Hybrid, FPrec) of each. Also, the amount of unique parameters (a high number indicating high compressibility) is shown for each layer.\relax }}{59}{table.caption.39}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Layer descriptions of the Sketch-A-Net model.\relax }}{59}{table.caption.40}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Layers descriptions of the ResNet-18 model.\relax }}{60}{table.caption.41}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Layers descriptions of the SqueezeNet model.\relax }}{61}{table.caption.42}
+\addvspace {1em}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Filter sizes for the AlexNet model. Notice the filter sizes of the linear layers of the original model has $|V|\times |U|$ parameters, whereas X-AlexNet models have $|V|\times D$ parameters. Note that $D << |U|$ as stated in Section 3.2. Hence, expander graphs model connections in linear layers (X-Linear) effectively.\relax }}{69}{table.caption.47}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Filter sizes for the VGG-16 model on CIFAR-10 dataset. The filter sizes given are $|V|\times |U| \times c \times c$ in original VGG network, $|V|\times D \times c \times c$ in our X-VGG16 models. Note that $D << |U|$ as stated in Section 3.2. Hence, expander graphs model connections in Convolutional layers (X-Conv) effectively.\relax }}{70}{table.caption.48}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Results obtained on the state-of-the-art models on CIFAR-10 and CIFAR-100 datasets, ordered by FLOPs per model. X-Nets give significantly better accuracies with corresponding DenseNet models in the same limited computational budget and correspondingly significant parameter and FLOP reduction for models with similar accuracy.\relax }}{71}{table.caption.49}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Results obtained on the state-of-the-art models on ImageNet dataset, ordered by FLOPs. We also observe that X-DenseNetBC models outperform ResNet and X-ResNet models in both compression, parameters and FLOPs and achieve comparable accuracies with the highly efficient MobileNets and ShuffleNets in the same parameter budget, albeit with much higher FLOPs due to architectural constraints.\relax }}{72}{table.caption.50}
+\contentsline {table}{\numberline {B.5}{\ignorespaces We display accuracies, parameters and FLOPs of all the wider and deeper networks on CIFAR-100 listed in increasing compression order. This proves that efficiently designing layers like X-Conv and X-Linear allows us to train wider and deeper networks frugally.\relax }}{74}{table.caption.51}

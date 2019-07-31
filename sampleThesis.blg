@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: sampleThesis.aux
+The style file: latex8.bst
+Database file #1: ./sampleBib.bib
+Repeated entry---line 111 of file ./sampleBib.bib
+ : @inproceedings{cheng2015exploration
+ :                                    ,
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring lin2016fixed's extra "booktitle" field
+--line 460 of file ./sampleBib.bib
+"{" immediately follows a field name---line 805 of file ./sampleBib.bib
+ :   journal={BMVC},@inproceedings
+ :                                {he2016identity,
+I'm skipping whatever remains of this entry
+Repeated entry---line 827 of file ./sampleBib.bib
+ : @article{hu2017squeeze
+ :                       ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "zhang2017shufflenet"
+Warning--empty journal in cudaconvnet
+Warning--empty journal in krizhevsky2009learning
+Warning--empty publisher in alex2012alexnet
+Warning--empty booktitle in lecun1990optimal
+Warning--empty publisher in lecun1990optimal
+Warning--empty publisher in wen2016structured
+Warning--empty year in yu2015sketch
+You've used 86 entries,
+            2118 wiz_defined-function locations,
+            822 strings with 16983 characters,
+and the built_in function-call counts, 28283 in all, are:
+= -- 2469
+> -- 1931
+< -- 6
++ -- 762
+- -- 672
+* -- 1889
+:= -- 4978
+add.period$ -- 262
+call.type$ -- 86
+change.case$ -- 592
+chr.to.int$ -- 0
+cite$ -- 93
+duplicate$ -- 1087
+empty$ -- 2011
+format.name$ -- 672
+if$ -- 5712
+int.to.chr$ -- 0
+int.to.str$ -- 86
+missing$ -- 86
+newline$ -- 433
+num.names$ -- 172
+pop$ -- 760
+preamble$ -- 1
+purify$ -- 506
+quote$ -- 0
+skip$ -- 685
+stack$ -- 0
+substring$ -- 653
+swap$ -- 178
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 344
+warning$ -- 7
+while$ -- 189
+width$ -- 88
+write$ -- 867
+(There were 3 error messages)

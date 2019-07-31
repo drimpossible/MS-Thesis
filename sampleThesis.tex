@@ -1,0 +1,171 @@
+%  $Description: Thesis
+%  $Author: Ameya Pandurang Prabhu $
+%  $Date: 3/11/2016  $
+
+\documentclass[11pt]{book}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+\usepackage[pdftex]{graphicx}
+\graphicspath{{./figures/}}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png, .PNG}
+\usepackage{iiit_thesis}
+
+\usepackage[export]{adjustbox}
+\usepackage{afterpage}
+%\usepackage{algorithm2e}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{array}
+\usepackage{bbm}
+\usepackage{breqn}
+\usepackage{caption}
+\usepackage{changepage}
+\usepackage{diagbox}
+\usepackage{subcaption}
+\usepackage{cite}
+\usepackage{courier}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{dblfloatfix}
+\usepackage{dirtytalk}
+\usepackage{dsfont}
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+\makeatother
+\setlength{\parskip}{0pt}
+\raggedbottom
+%\usepackage{xcolor}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+
+
+\usepackage{epsfig}
+\usepackage{float}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage{latexsym}
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage[super,negative]{nth}
+\usepackage{placeins}
+\usepackage{tabu}
+\usepackage{textcomp}
+\usepackage{times}
+\usepackage{url}
+
+%\definecolor{darkspringgreen}{rgb}{0.09, 0.45, 0.27}
+
+\usepackage{xspace}
+
+% \pgfplotsset{compat=1.5}
+\setcounter{secnumdepth}{2}
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+% From ACPR style file
+\makeatletter
+    \DeclareRobustCommand\onedot{\futurelet\@let@token\@onedot}
+    \def\@onedot{\ifx\@let@token.\else.\null\fi\xspace}
+    \def\eg{\emph{e.g}\onedot} \def\Eg{\emph{E.g}\onedot}
+    \def\ie{\emph{i.e}\onedot} \def\Ie{\emph{I.e}\onedot}
+    \def\cf{\emph{c.f}\onedot} \def\Cf{\emph{C.f}\onedot}
+    \def\etc{\emph{etc}\onedot} \def\vs{\emph{vs}\onedot}
+    \def\wrt{w.r.t\onedot} \def\dof{d.o.f\onedot}
+    \def\etal{\emph{et al}\onedot}
+\makeatother
+
+\newcommand{\specialcell}[2][c]{\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\long\def\symbolfootnote[#1]#2{\begingroup%
+\def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
+\renewcommand{\baselinestretch}{1.2}
+\onecolumn
+%--------------------------------------------------------
+\begin{document}
+\pagenumbering{roman}
+%--------------------------------------------------------
+%% TITLE PAGE
+\input{00-titlePage.tex}
+%--------------------------------------------------------
+%% COPYRIGHT PAGE
+\newpage
+\thispagestyle{empty}
+\renewcommand{\thesisdedication}{
+    {\large Copyright \copyright~~Ameya Prabhu, 2019\\}
+    {\large All Rights Reserved\\}
+}
+\thesisdedicationpage
+%--------------------------------------------------------
+%% CERTIFICATE PAGE
+\input{01-certificate.tex}
+%--------------------------------------------------------
+%%% DEDICATION PAGE
+\newpage
+\thispagestyle{empty}
+\renewcommand{\thesisdedication}{
+    {\large To understanding colourless green CNNs which dream furiously}
+}
+\thesisdedicationpage
+\mastersthesis
+\renewcommand{\baselinestretch}{1.5}
+%--------------------------------------------------------
+% ACKNOWLEDGEMENTS PAGE
+\chapter*{Acknowledgments}
+\label{ch:ack}
+\input{02-acknowledgements.tex}
+%--------------------------------------------------------
+%% ABSTRACT PAGE
+\chapter*{Abstract}
+\label{ch:abstract}
+\input{03-abstract.tex}
+%--------------------------------------------------------
+\tableofcontents
+\listoffigures
+\listoftables
+%--------------------------------------------------------
+\chapter{Introduction}
+\label{ch:intro}
+\input{04-introduction.tex}
+%--------------------------------------------------------
+\chapter{Related Work}
+\label{ch:related}
+\input{05-related.tex}
+%--------------------------------------------------------
+\chapter{Distribution Aware Binarization of Networks}
+\label{ch:dabn}
+\input{06-distribution-aware-binarization.tex}
+%--------------------------------------------------------
+\chapter{Hybrid Binary Networks}
+\label{ch:hbn}
+\input{07-hybrid-binary-networks.tex}
+%--------------------------------------------------------
+\chapter{Deep Expander Networks}
+\label{ch:den}
+\input{08-deep-expander-networks.tex}
+%--------------------------------------------------------
+\chapter{Conclusions}
+\label{ch:wrapup}
+\input{09-conclusion.tex}
+%--------------------------------------------------------
+\chapter*{Related Publications}
+\label{ch:relatedPubs}
+\input{10-relatedPapers.tex}
+%\input{macros}
+%--------------------------------------------------------
+%%% Optional appendix
+\appendix
+\chapter{Binary Networks: Appendix}
+\label{ch:apndx1}
+\input{12-appendix.tex}
+
+\chapter{Deep Expander Networks: Appendix}
+\label{ch:apndx2}
+\input{11-appendix.tex}
+%--------------------------------------------------------
+
+%--------------------------------------------------------
+\bibliographystyle{latex8}
+\bibliography{./sampleBib}
+
+\end{document}
